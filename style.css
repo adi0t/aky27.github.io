@@ -1,0 +1,109 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+    /* tagrets both top, left, right and bottom margins */
+    font-size: 1.5vw;
+}
+
+#logo {
+    margin: 0px;
+    padding: 8px;
+    font-family: "Fredoka One", sans-serif;
+    width: 16%;
+    /* if we want outlines around font, we can use chatgpt by using text shadow */
+}
+
+ul{
+    margin: 0px;
+}
+
+body > header {
+    background-color: orange;
+    color:#ffffff;
+    display:flex;
+    /* the flex basically moves the list options next to the header */
+    height: 12vh;
+    /* using viewport height to increase the header size instead of pixel size */
+    align-items: center;
+    /* centres things for us, not in the middle of the page but within the element*/
+    justify-content: space-around;
+}
+/* we can also use #main-header as a separate thing as it'll still edit whatever our desired outcome is */
+
+body>header>nav>ul {
+    /* this one removes the bullet points */
+    list-style: none;
+    text-decoration: none;
+    /* removes the underlining */
+}
+
+#nav-ul{
+    display: flex;
+    /* however the listed items are quite close to each other, so we can give them some padding, coding is done below */
+}
+
+#nav-ul>li{
+    padding: 8px;
+    margin: 16px;
+}
+
+
+.navbutton {
+    /* this removes the hyperlink colour and the uderlinings */
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    /* the padding here allows us to have a bigger clickable area */
+    border: 1px solid white;
+    border-radius: 10%;
+    /* allows reader to see clickable area and keep line width 1px */
+}
+/* . is for classes, whereas id's is # */
+
+body>main article {
+    width: 70%;
+    margin: auto;
+    /* auto, centres all the texts */
+}
+
+#main-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-content > div{
+    width: 70%;
+}
+
+form{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+body>footer {
+    background-color: orange;
+    display: flex;
+}
+
+
+img{
+    border-radius: 50%;
+    /* 100% gives us the picture to be a circle whereas 10% gives us a rectangle */
+}
+
+#footer-ul {
+    display: flex;
+    list-style: none;
+}
+
+#footer-ul > div > li{
+    margin-left: 12px;
+}
+
+#footer-ul > div > li > a{
+    text-decoration: none;
+    color: white;
+}
